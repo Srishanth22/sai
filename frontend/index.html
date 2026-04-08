@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynthAI | Automated Text Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dynamic-background">
+        <div class="orb orb-primary"></div>
+        <div class="orb orb-secondary"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                SynthAI
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#demo" class="nav-highlight">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="icon-button" aria-label="Toggle Theme">
+                <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="container text-center">
+                <div class="pulse-badge">🚀 Next-Gen NLP Model Live</div>
+                <h1 class="hero-title">Automated <span class="gradient-text">Text Generation</span> System</h1>
+                <p class="hero-sub">Transform your ideas into high-quality, human-like text in milliseconds. Powered by advanced Machine Learning architectures.</p>
+                <div class="cta-group">
+                    <a href="#demo" class="btn btn-primary btn-large">Try the Demo</a>
+                    <a href="#about" class="btn btn-outline btn-large">How it Works</a>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>7+</h3>
+                        <p>Content Types</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Deep</h3>
+                        <p>AI Backbone</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3><span class="live-dot"></span> Real-Time</h3>
+                        <p>Generation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title">Intelligent <span class="gradient-text">Processing</span></h2>
+                        <p>Our system orchestrates state-of-the-art NLP pipelines with advanced Transformer language models. We sanitize, tokenize, and formulate context-rich vectors to ensure output is incredibly human-like and accurately targeted to your desired tone.</p>
+                        <a href="#demo" class="btn btn-primary" style="margin-top: 1rem;">Experience It</a>
+                    </div>
+                    <div class="pipeline-visual">
+                        <div class="pipeline-step">
+                            <div class="step-icon">📝</div>
+                            <div class="step-text">1. User Input</div>
+                        </div>
+                        <div class="pipeline-arrow">↓</div>
+                        <div class="pipeline-step">
+                            <div class="step-icon">⚙️</div>
+                            <div class="step-text">2. NLP Processing (SpaCy/NLTK)</div>
+                        </div>
+                        <div class="pipeline-arrow">↓</div>
+                        <div class="pipeline-step step-highlight">
+                            <div class="step-icon">🧠</div>
+                            <div class="step-text">3. Transformer Model Generation</div>
+                        </div>
+                        <div class="pipeline-arrow">↓</div>
+                        <div class="pipeline-step">
+                            <div class="step-icon">✨</div>
+                            <div class="step-text">4. Formatted Output</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title text-center">Core <span class="gradient-text">Features</span></h2>
+                <div class="feature-grid">
+                    <div class="feature-card"><div class="feat-icon c-blue">⚡</div><h3>Instant Generation</h3><p>Optimized API latency for real-time streaming results.</p></div>
+                    <div class="feature-card"><div class="feat-icon c-purple">🎭</div><h3>Dynamic Tones</h3><p>Adjust the sentiment and style of writing seamlessly.</p></div>
+                    <div class="feature-card"><div class="feat-icon c-green">📏</div><h3>Precise Length</h3><p>Strict token constraints and robust generation padding.</p></div>
+                    <div class="feature-card"><div class="feat-icon c-orange">🔄</div><h3>Context Aware</h3><p>Continuity checking prevents repetitive or disjointed text.</p></div>
+                    <div class="feature-card"><div class="feat-icon c-pink">📊</div><h3>Analytics Ready</h3><p>Track generation history, word counts, and metadata.</p></div>
+                    <div class="feature-card"><div class="feat-icon c-yellow">🛡️</div><h3>Secure Backend</h3><p>API requests are safely routed through our Python processing server.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section id="applications" class="applications">
+            <div class="container text-center">
+                <h2 class="section-title">Endless <span class="gradient-text">Applications</span></h2>
+                <p style="margin-bottom: 2rem; color: var(--text-2);">Empowering creators and developers across multiple fields.</p>
+                <div class="tags-container">
+                    <span class="app-tag">Blog Drafting</span>
+                    <span class="app-tag">Academic Essays</span>
+                    <span class="app-tag">Code Documentation</span>
+                    <span class="app-tag">Social Media Posts</span>
+                    <span class="app-tag">Email Responses</span>
+                    <span class="app-tag">Creative Writing</span>
+                    <span class="app-tag">Sales Copy</span>
+                    <span class="app-tag">Product Descriptions</span>
+                    <span class="app-tag">Executive Summaries</span>
+                    <span class="app-tag">SEO Meta Tags</span>
+                    <span class="app-tag">Chatbot Personas</span>
+                    <span class="app-tag">News Articles</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Demo Section -->
+        <section id="demo" class="demo-app">
+            <div class="container">
+                <h2 class="section-title text-center">Live <span class="gradient-text">Generator</span></h2>
+                
+                <div class="app-layout">
+                    <!-- Controls Sidebar -->
+                    <div class="app-controls panel">
+                        <div class="form-group">
+                            <label>What should we write about?</label>
+                            <textarea id="prompt-input" rows="4" placeholder="e.g., The impact of quantum computing on modern cryptography..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Content Type</label>
+                            <select id="type-select">
+                                <option value="paragraph">Standard Paragraph</option>
+                                <option value="essay">Academic Essay</option>
+                                <option value="story">Short Story</option>
+                                <option value="summary">Summary</option>
+                                <option value="chatbot reply">Chatbot Reply</option>
+                                <option value="poem">Poem</option>
+                                <option value="sales pitch">Sales Pitch</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tone of Voice</label>
+                            <div class="tone-chips" id="tone-selector">
+                                <div class="chip active" data-val="neutral">Neutral</div>
+                                <div class="chip" data-val="professional">Professional</div>
+                                <div class="chip" data-val="creative">Creative</div>
+                                <div class="chip" data-val="enthusiastic">Enthusiastic</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Max Token Length: <span id="len-display">200</span></label>
+                            <input type="range" id="length-slider" min="50" max="500" value="200" step="10">
+                        </div>
+
+                        <button id="generate-btn" class="btn btn-primary w-100">
+                            <span class="btn-lbl">Generate Text ✨</span>
+                            <span class="spinner" style="display: none;"></span>
+                        </button>
+                    </div>
+
+                    <!-- Output Area -->
+                    <div class="app-workspace">
+                        <div class="output-panel panel">
+                            <div class="output-header">
+                                <span class="model-badge">
+                                    <div class="status-ping"></div>
+                                    Model: GPT Ensemble
+                                </span>
+                                <div class="output-actions">
+                                    <button class="icon-button" id="copy-btn" title="Copy to Clipboard">📋</button>
+                                    <button class="icon-button" id="download-btn" title="Download .txt">📥</button>
+                                </div>
+                            </div>
+                            <div class="output-content" id="output-box">
+                                <span class="placeholder-text">Generated text will stream here...</span>
+                            </div>
+                            <div class="output-footer">
+                                <span id="word-count">0 words</span>
+                                <span id="status-indicator">Idle</span>
+                            </div>
+                        </div>
+
+                        <!-- History Panel -->
+                        <div class="history-panel panel">
+                            <h3>Session History</h3>
+                            <ul id="history-list" class="history-list">
+                                <li class="history-empty">No generations yet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container container-sm">
+                <h2 class="section-title text-center">Get in <span class="gradient-text">Touch</span></h2>
+                <div class="panel">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group w-50">
+                                <label>Name</label>
+                                <input type="text" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group w-50">
+                                <label>Email</label>
+                                <input type="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" required placeholder="API Integration Inference">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" required placeholder="How can I integrate SynthAI into my app?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message ✉️</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo justify-center" style="margin-bottom: 1rem;">
+                ✨ SynthAI
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 Automated Text Generation System. Concept Built for Production.
+            </p>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
